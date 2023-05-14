@@ -31,7 +31,7 @@ class Plot:
                 title = 'Vaccinated'
 
         axis.set_ylabel(title)
-
+        plt.ylim([0, 1])
         plt.savefig("../plots/" + title + ".pdf")
         plt.show()
 
